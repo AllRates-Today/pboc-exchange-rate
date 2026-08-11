@@ -1,7 +1,7 @@
 {
   "name": "pboc-exchange-rate",
-  "version": "1.0.1",
-  "description": "Official People's Bank of China (China) daily exchange rates — ~25 currencies vs CNY, history since 2026. Zero-dependency Node.js/TypeScript client.",
+  "version": "1.1.2",
+  "description": "Official People's Bank of China (China) daily exchange rates — 25 currencies vs CNY, history since 2026. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "pboc",
     "people's",
