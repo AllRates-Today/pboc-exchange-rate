@@ -70,10 +70,10 @@ const pair = await getRate('USD', 'CNY', { apiKey: 'art_live_...' });
 {
   bank: 'pboc',
   name: 'People\'s Bank of China',
-  rate_date: '2026-08-11',   // People's Bank of China's own publication date
+  rate_date: '2026-09-09',   // People's Bank of China's own publication date
   source: 'USD',
   target: 'CNY',
-  rate: 6.79,
+  rate: 6.7769,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -98,9 +98,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'pboc',
   name: 'People\'s Bank of China',
-  rate_date: '2026-08-11',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "USD", "quote": "CNY", "type": "reference", "value": 6.79 },
+    { "base": "USD", "quote": "CNY", "type": "reference", "value": 6.7769 },
     // … the rest of the published table (25 currencies vs CNY)
   ],
   disclaimer: '…'
@@ -140,7 +140,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'pboc-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'CNY', from: '2026-01-01', to: '2026-08-11' },
+  { source: 'USD', target: 'CNY', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -153,11 +153,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'CNY',
   from: '2026-01-01',
-  to: '2026-08-11',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-11', rate: 6.79, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 6.7769, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -170,9 +170,9 @@ Pass `{ symbol: 'USD' }` instead of `source`/`target` to get the raw published r
 
 ## 🗺️ Currencies covered
 
-People's Bank of China currently publishes rates covering **26 currencies** (as of the latest table):
+People's Bank of China currently publishes rates covering **25 currencies** against the CNY (as of the latest table):
 
-`AED` · `AUD` · `CAD` · `CHF` · `CNY` · `DKK` · `EUR` · `GBP` · `HKD` · `HUF` · `JPY` · `KRW` · `MOP` · `MXN` · `MYR` · `NOK` · `NZD` · `PLN` · `RUB` · `SAR` · `SEK` · `SGD` · `THB` · `TRY` · `USD` · `ZAR`
+🇦🇪 `AED` · 🇦🇺 `AUD` · 🇨🇦 `CAD` · 🇨🇭 `CHF` · 🇩🇰 `DKK` · 🇪🇺 `EUR` · 🇬🇧 `GBP` · 🇭🇰 `HKD` · 🇭🇺 `HUF` · 🇯🇵 `JPY` · 🇰🇷 `KRW` · 🇲🇴 `MOP` · 🇲🇽 `MXN` · 🇲🇾 `MYR` · 🇳🇴 `NOK` · 🇳🇿 `NZD` · 🇵🇱 `PLN` · 🇷🇺 `RUB` · 🇸🇦 `SAR` · 🇸🇪 `SEK` · 🇸🇬 `SGD` · 🇹🇭 `THB` · 🇹🇷 `TRY` · 🇺🇸 `USD` · 🇿🇦 `ZAR`
 
 ## ⚖️ Published vs derived rates
 
@@ -235,6 +235,14 @@ getRate('USD', 'CNY', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 2026 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/pboc.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/pboc/latest.json`
 
 ## 🔗 Links
 
