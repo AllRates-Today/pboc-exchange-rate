@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'CNY', { apiKey: 'art_live_...' });
 {
   bank: 'pboc',
   name: 'People\'s Bank of China',
-  rate_date: '2026-09-24',   // People's Bank of China's own publication date
+  rate_date: '2026-09-30',   // People's Bank of China's own publication date
   source: 'USD',
   target: 'CNY',
-  rate: 6.7489,
+  rate: 6.7351,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,9 +113,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'pboc',
   name: 'People\'s Bank of China',
-  rate_date: '2026-09-24',
+  rate_date: '2026-09-30',
   rates: [
-    { "base": "USD", "quote": "CNY", "type": "reference", "value": 6.7489 },
+    { "base": "USD", "quote": "CNY", "type": "reference", "value": 6.7351 },
     // … the rest of the published table (25 currencies vs CNY)
   ],
   disclaimer: '…'
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'pboc-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'CNY', from: '2026-01-01', to: '2026-09-24' },
+  { source: 'USD', target: 'CNY', from: '2026-01-01', to: '2026-09-30' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'CNY',
   from: '2026-01-01',
-  to: '2026-09-24',
+  to: '2026-09-30',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-24', rate: 6.7489, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-30', rate: 6.7351, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
