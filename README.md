@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/pboc-exchange-rate.svg)](https://github.com/AllRates-Today/pboc-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/pboc-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/CNY today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fpboc%3Fsource%3DUSD%26target%3DCNY&query=%24.rate&label=USD%2FCNY%20published%20by%20People's%20Bank%20of%20China&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/pboc/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fpboc%3Fsource%3DUSD%26target%3DCNY&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/pboc/)
 
 **Official People's Bank of China (China) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers People's Bank of China itself prints, every business day.**
 
@@ -32,6 +34,44 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full People's Bank of China table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-09** by People's Bank of China — 25 rates. Updated 2026-10-09.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AUD | CNY | reference | 4.6746 |
+| CAD | CNY | reference | 4.7204 |
+| CHF | CNY | reference | 8.0821 |
+| CNY | AED | reference | 0.54695 |
+| CNY | DKK | reference | 0.9924 |
+| CNY | HUF | reference | 48.4644 |
+| CNY | KRW | reference | 200.18 |
+| CNY | MOP | reference | 1.2011 |
+| CNY | MXN | reference | 2.7042 |
+| CNY | MYR | reference | 0.60836 |
+| CNY | NOK | reference | 1.4246 |
+| CNY | PLN | reference | 0.5805 |
+| CNY | RUB | reference | 12.6873 |
+| CNY | SAR | reference | 0.55901 |
+| CNY | SEK | reference | 1.4848 |
+| CNY | THB | reference | 5.0149 |
+| CNY | TRY | reference | 7.33835 |
+| CNY | ZAR | reference | 2.468 |
+| EUR | CNY | reference | 7.5323 |
+| GBP | CNY | reference | 8.8872 |
+| HKD | CNY | reference | 0.85798 |
+| JPY | CNY | reference | 0.042571 |
+| NZD | CNY | reference | 3.7634 |
+| SGD | CNY | reference | 5.246 |
+| USD | CNY | reference | 6.733 |
+
+Source: [Official rates published by PBOC, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/pboc/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
