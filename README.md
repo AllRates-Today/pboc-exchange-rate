@@ -42,35 +42,35 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-14** by People's Bank of China — 25 rates. Updated 2026-10-14.
+Published **2026-10-15** by People's Bank of China — 25 rates. Updated 2026-10-15.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | CNY | reference | 4.686 |
+| AUD | CNY | reference | 4.6794 |
 | CAD | CNY | reference | 4.718 |
-| CHF | CNY | reference | 8.0613 |
-| CNY | AED | reference | 0.54743 |
-| CNY | DKK | reference | 0.9945 |
-| CNY | HUF | reference | 48.3585 |
-| CNY | KRW | reference | 199.96 |
-| CNY | MOP | reference | 1.2027 |
-| CNY | MXN | reference | 2.7341 |
-| CNY | MYR | reference | 0.60815 |
-| CNY | NOK | reference | 1.4189 |
-| CNY | PLN | reference | 0.58099 |
-| CNY | RUB | reference | 12.5307 |
-| CNY | SAR | reference | 0.55975 |
-| CNY | SEK | reference | 1.4848 |
-| CNY | THB | reference | 5.0085 |
-| CNY | TRY | reference | 7.35519 |
-| CNY | ZAR | reference | 2.4544 |
-| EUR | CNY | reference | 7.5165 |
-| GBP | CNY | reference | 8.8956 |
-| HKD | CNY | reference | 0.85688 |
-| JPY | CNY | reference | 0.042412 |
-| NZD | CNY | reference | 3.7664 |
-| SGD | CNY | reference | 5.2442 |
-| USD | CNY | reference | 6.7249 |
+| CHF | CNY | reference | 8.0588 |
+| CNY | AED | reference | 0.54735 |
+| CNY | DKK | reference | 0.9959 |
+| CNY | HUF | reference | 48.4577 |
+| CNY | KRW | reference | 200.42 |
+| CNY | MOP | reference | 1.2024 |
+| CNY | MXN | reference | 2.7506 |
+| CNY | MYR | reference | 0.60773 |
+| CNY | NOK | reference | 1.4168 |
+| CNY | PLN | reference | 0.58191 |
+| CNY | RUB | reference | 12.4869 |
+| CNY | SAR | reference | 0.55951 |
+| CNY | SEK | reference | 1.4903 |
+| CNY | THB | reference | 5.0153 |
+| CNY | TRY | reference | 7.35894 |
+| CNY | ZAR | reference | 2.4711 |
+| EUR | CNY | reference | 7.5068 |
+| GBP | CNY | reference | 8.8709 |
+| HKD | CNY | reference | 0.85702 |
+| JPY | CNY | reference | 0.042472 |
+| NZD | CNY | reference | 3.7593 |
+| SGD | CNY | reference | 5.2262 |
+| USD | CNY | reference | 6.7253 |
 
 Source: [Official rates published by PBOC, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/pboc/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
