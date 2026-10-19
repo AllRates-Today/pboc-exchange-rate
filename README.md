@@ -33,44 +33,47 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/pboc').th
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
 
 ## 📈 Latest published table
 
 [![Latest People's Bank of China table](https://allratestoday.com/api/open/central-bank/pboc/table.svg)](https://allratestoday.com/central-bank-rates-api/pboc/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-16** by People's Bank of China — 25 rates. Updated 2026-10-16.
+<details>
+<summary>Table as text: published 2026-10-19 by People's Bank of China — 25 rates. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | CNY | reference | 4.6416 |
-| CAD | CNY | reference | 4.7261 |
-| CHF | CNY | reference | 8.1099 |
-| CNY | AED | reference | 0.54761 |
+| AUD | CNY | reference | 4.67 |
+| CAD | CNY | reference | 4.7452 |
+| CHF | CNY | reference | 8.1377 |
+| CNY | AED | reference | 0.54792 |
 | CNY | DKK | reference | 0.9937 |
-| CNY | HUF | reference | 48.3053 |
-| CNY | KRW | reference | 200.28 |
-| CNY | MOP | reference | 1.203 |
-| CNY | MXN | reference | 2.7458 |
-| CNY | MYR | reference | 0.60792 |
-| CNY | NOK | reference | 1.4131 |
-| CNY | PLN | reference | 0.57998 |
-| CNY | RUB | reference | 12.5152 |
-| CNY | SAR | reference | 0.55949 |
-| CNY | SEK | reference | 1.4837 |
-| CNY | THB | reference | 5.0017 |
-| CNY | TRY | reference | 7.3787 |
-| CNY | ZAR | reference | 2.4606 |
-| EUR | CNY | reference | 7.5228 |
-| GBP | CNY | reference | 8.9037 |
-| HKD | CNY | reference | 0.85658 |
-| JPY | CNY | reference | 0.042439 |
-| NZD | CNY | reference | 3.771 |
-| SGD | CNY | reference | 5.2335 |
-| USD | CNY | reference | 6.722 |
+| CNY | HUF | reference | 48.226 |
+| CNY | KRW | reference | 199.47 |
+| CNY | MOP | reference | 1.2031 |
+| CNY | MXN | reference | 2.749 |
+| CNY | MYR | reference | 0.60803 |
+| CNY | NOK | reference | 1.4076 |
+| CNY | PLN | reference | 0.58039 |
+| CNY | RUB | reference | 12.4537 |
+| CNY | SAR | reference | 0.55982 |
+| CNY | SEK | reference | 1.4797 |
+| CNY | THB | reference | 4.9925 |
+| CNY | TRY | reference | 7.38509 |
+| CNY | ZAR | reference | 2.4555 |
+| EUR | CNY | reference | 7.5237 |
+| GBP | CNY | reference | 8.9362 |
+| HKD | CNY | reference | 0.85642 |
+| JPY | CNY | reference | 0.04248 |
+| NZD | CNY | reference | 3.7901 |
+| SGD | CNY | reference | 5.241 |
+| USD | CNY | reference | 6.7208 |
+
+</details>
 
 Source: [Official rates published by PBOC, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/pboc/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -343,7 +346,8 @@ Need the whole archive rather than an API call? The same published tables are mi
 - [All central bank sources](https://allratestoday.com/central-bank-rates-api/)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/pboc-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
 - [API documentation](https://allratestoday.com/docs/#central-bank) · [Interactive reference](https://allratestoday.com/api-reference/) · [Methodology](https://allratestoday.com/official-rates-methodology/)
-- [Register (free)](https://allratestoday.com/register) · [Pricing](https://allratestoday.com/pricing/)
+- [Register (Free)](https://allratestoday.com/register) · [Dashboard](https://allratestoday.com/profile) · [Pricing](https://allratestoday.com/pricing/)
+- [Status](https://allratestoday.com/status)
 - [GitHub](https://github.com/AllRates-Today/pboc-exchange-rate)
 
 ## 📜 License
