@@ -47,35 +47,35 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by People's Bank of China — 25 rates. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by People's Bank of China — 25 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | CNY | reference | 4.7077 |
-| CAD | CNY | reference | 4.7631 |
-| CHF | CNY | reference | 8.0832 |
-| CNY | AED | reference | 0.54888 |
-| CNY | DKK | reference | 1.0033 |
-| CNY | HUF | reference | 49.1701 |
-| CNY | KRW | reference | 198.84 |
-| CNY | MOP | reference | 1.2036 |
-| CNY | MXN | reference | 2.7867 |
-| CNY | MYR | reference | 0.60995 |
-| CNY | NOK | reference | 1.3952 |
-| CNY | PLN | reference | 0.58992 |
-| CNY | RUB | reference | 12.0749 |
-| CNY | SAR | reference | 0.56087 |
-| CNY | SEK | reference | 1.4871 |
-| CNY | THB | reference | 5.0555 |
-| CNY | TRY | reference | 7.43973 |
-| CNY | ZAR | reference | 2.4839 |
-| EUR | CNY | reference | 7.4499 |
-| GBP | CNY | reference | 8.9097 |
-| HKD | CNY | reference | 0.85621 |
-| JPY | CNY | reference | 0.042434 |
-| NZD | CNY | reference | 3.8031 |
-| SGD | CNY | reference | 5.2264 |
-| USD | CNY | reference | 6.7165 |
+| AUD | CNY | reference | 4.7162 |
+| CAD | CNY | reference | 4.7785 |
+| CHF | CNY | reference | 8.0799 |
+| CNY | AED | reference | 0.54946 |
+| CNY | DKK | reference | 1.002 |
+| CNY | HUF | reference | 49.1344 |
+| CNY | KRW | reference | 200.57 |
+| CNY | MOP | reference | 1.2038 |
+| CNY | MXN | reference | 2.7817 |
+| CNY | MYR | reference | 0.60857 |
+| CNY | NOK | reference | 1.3852 |
+| CNY | PLN | reference | 0.58959 |
+| CNY | RUB | reference | 12.0658 |
+| CNY | SAR | reference | 0.56135 |
+| CNY | SEK | reference | 1.4816 |
+| CNY | THB | reference | 5.054 |
+| CNY | TRY | reference | 7.44872 |
+| CNY | ZAR | reference | 2.4824 |
+| EUR | CNY | reference | 7.457 |
+| GBP | CNY | reference | 8.9101 |
+| HKD | CNY | reference | 0.85596 |
+| JPY | CNY | reference | 0.042453 |
+| NZD | CNY | reference | 3.7609 |
+| SGD | CNY | reference | 5.2219 |
+| USD | CNY | reference | 6.7147 |
 
 </details>
 
@@ -240,6 +240,7 @@ The People's Bank of China is China's central bank. Each trading day at 09:15 Be
 
 - Publisher's own page: [CFETS RMB central parity rates](https://www.chinamoney.com.cn/english/bmkcpr/) · [www.pbc.gov.cn](http://www.pbc.gov.cn)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [People's Bank of China rates page](https://allratestoday.com/central-bank-rates-api/pboc/)
+- In the API: usually by **02:15 UTC** (measured over the last 11 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
