@@ -24,58 +24,43 @@
 
 Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
-## ⚡ Try it without a key
-
-The latest People's Bank of China table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
-
-```bash
-curl "https://allratestoday.com/api/open/central-bank/pboc?source=USD&target=CNY"
-```
-
-```js
-const r = await fetch('https://allratestoday.com/api/open/central-bank/pboc').then((x) => x.json());
-console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
-```
-
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
-
 ## 📈 Latest published table
 
 [![Latest People's Bank of China table](https://allratestoday.com/api/open/central-bank/pboc/table.svg)](https://allratestoday.com/central-bank-rates-api/pboc/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by People's Bank of China — 25 rates. Updated 2026-10-29.</summary>
+<summary>Table as text: published 2026-10-30 by People's Bank of China — 25 rates. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | CNY | reference | 4.7162 |
-| CAD | CNY | reference | 4.7785 |
-| CHF | CNY | reference | 8.0799 |
-| CNY | AED | reference | 0.54946 |
-| CNY | DKK | reference | 1.002 |
-| CNY | HUF | reference | 49.1344 |
-| CNY | KRW | reference | 200.57 |
-| CNY | MOP | reference | 1.2038 |
-| CNY | MXN | reference | 2.7817 |
-| CNY | MYR | reference | 0.60857 |
-| CNY | NOK | reference | 1.3852 |
-| CNY | PLN | reference | 0.58959 |
-| CNY | RUB | reference | 12.0658 |
-| CNY | SAR | reference | 0.56135 |
-| CNY | SEK | reference | 1.4816 |
-| CNY | THB | reference | 5.054 |
-| CNY | TRY | reference | 7.44872 |
-| CNY | ZAR | reference | 2.4824 |
-| EUR | CNY | reference | 7.457 |
-| GBP | CNY | reference | 8.9101 |
-| HKD | CNY | reference | 0.85596 |
-| JPY | CNY | reference | 0.042453 |
-| NZD | CNY | reference | 3.7609 |
-| SGD | CNY | reference | 5.2219 |
-| USD | CNY | reference | 6.7147 |
+| AUD | CNY | reference | 4.695 |
+| CAD | CNY | reference | 4.7777 |
+| CHF | CNY | reference | 8.1255 |
+| CNY | AED | reference | 0.54969 |
+| CNY | DKK | reference | 0.9994 |
+| CNY | HUF | reference | 48.8061 |
+| CNY | KRW | reference | 200.74 |
+| CNY | MOP | reference | 1.2034 |
+| CNY | MXN | reference | 2.8162 |
+| CNY | MYR | reference | 0.60613 |
+| CNY | NOK | reference | 1.3842 |
+| CNY | PLN | reference | 0.58599 |
+| CNY | RUB | reference | 12.182 |
+| CNY | SAR | reference | 0.56164 |
+| CNY | SEK | reference | 1.4729 |
+| CNY | THB | reference | 5.0555 |
+| CNY | TRY | reference | 7.46401 |
+| CNY | ZAR | reference | 2.484 |
+| EUR | CNY | reference | 7.4792 |
+| GBP | CNY | reference | 8.9476 |
+| HKD | CNY | reference | 0.85594 |
+| JPY | CNY | reference | 0.042419 |
+| NZD | CNY | reference | 3.7624 |
+| SGD | CNY | reference | 5.2259 |
+| USD | CNY | reference | 6.7138 |
 
 </details>
 
