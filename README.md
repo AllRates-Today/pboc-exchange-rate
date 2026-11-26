@@ -32,35 +32,35 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-25 by People's Bank of China — 25 rates. Updated 2026-11-25.</summary>
+<summary>Table as text: published 2026-11-26 by People's Bank of China — 25 rates. Updated 2026-11-26.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AUD | CNY | reference | 4.4359 |
-| CAD | CNY | reference | 4.6802 |
-| CHF | CNY | reference | 8.0012 |
-| CNY | AED | reference | 0.54992 |
-| CNY | DKK | reference | 1.0203 |
-| CNY | HUF | reference | 50.3749 |
-| CNY | KRW | reference | 201.43 |
-| CNY | MOP | reference | 1.2047 |
-| CNY | MXN | reference | 2.9018 |
-| CNY | MYR | reference | 0.61473 |
-| CNY | NOK | reference | 1.4669 |
-| CNY | PLN | reference | 0.60796 |
-| CNY | RUB | reference | 12.3105 |
-| CNY | SAR | reference | 0.56181 |
-| CNY | SEK | reference | 1.5326 |
-| CNY | THB | reference | 5.0813 |
-| CNY | TRY | reference | 7.57993 |
-| CNY | ZAR | reference | 2.6224 |
-| EUR | CNY | reference | 7.3271 |
-| GBP | CNY | reference | 8.7637 |
-| HKD | CNY | reference | 0.85539 |
-| JPY | CNY | reference | 0.042008 |
-| NZD | CNY | reference | 3.6602 |
-| SGD | CNY | reference | 5.1871 |
-| USD | CNY | reference | 6.7088 |
+| AUD | CNY | reference | 4.4313 |
+| CAD | CNY | reference | 4.7024 |
+| CHF | CNY | reference | 8.0503 |
+| CNY | AED | reference | 0.54957 |
+| CNY | DKK | reference | 1.0187 |
+| CNY | HUF | reference | 50.6701 |
+| CNY | KRW | reference | 201.32 |
+| CNY | MOP | reference | 1.2041 |
+| CNY | MXN | reference | 2.9264 |
+| CNY | MYR | reference | 0.61521 |
+| CNY | NOK | reference | 1.4671 |
+| CNY | PLN | reference | 0.60881 |
+| CNY | RUB | reference | 12.3715 |
+| CNY | SAR | reference | 0.56134 |
+| CNY | SEK | reference | 1.5314 |
+| CNY | THB | reference | 5.0991 |
+| CNY | TRY | reference | 7.57769 |
+| CNY | ZAR | reference | 2.625 |
+| EUR | CNY | reference | 7.338 |
+| GBP | CNY | reference | 8.7701 |
+| HKD | CNY | reference | 0.85582 |
+| JPY | CNY | reference | 0.042036 |
+| NZD | CNY | reference | 3.6673 |
+| SGD | CNY | reference | 5.1842 |
+| USD | CNY | reference | 6.7096 |
 
 </details>
 
